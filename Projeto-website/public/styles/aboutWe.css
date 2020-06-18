@@ -1,0 +1,68 @@
+.aboutWe{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: black;
+
+    display: flex;
+    justify-content: center;
+}
+
+.aboutWe .background-malha{
+    background:  url('../../src/image/background/malha.png');
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    opacity: 0.40;
+}
+
+.aboutWe div {
+    background-position: center;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+
+    position: relative;
+
+    width: 100%;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+ 
+}
+
+.aboutWe div img {
+    
+    height: 500px;
+    right: 0;
+}
+
+.aboutWe div div {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: center;
+    
+    margin: 100px;
+    width: 400px;
+
+    background: none;
+}
+
+.aboutWe div div h1 {
+    font-size: 40px;
+    font-family: LEMON MILK;
+    font-weight: 500;
+    color: white;
+    margin: 300px 0 50px 65px;
+}
+
+.aboutWe div div p {
+    font-family: 'Roboto', sans-serif;
+    font-weight: initial;
+    font-size: 16px;
+    color: white;
+
+}
