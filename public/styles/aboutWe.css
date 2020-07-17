@@ -7,7 +7,7 @@
     display: flex;
     justify-content: center;
 
-    position: relative;
+    /* position: relative; */
 }
 
 .aboutWe .background-malha{
@@ -18,7 +18,7 @@
     opacity: 0.40;
 }
 
-.aboutWe div {
+.content-aboutWe {
     background-position: center;
     background-size: cover;
     margin: 0;
@@ -27,30 +27,25 @@
 
     width: 100%;
 
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: space-between;
- 
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 }
 
-.aboutWe div img {
-    
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    height: 100%;
+
+.content-img{
+    background: url('../../src/image/background/sobre.png') center center / cover no-repeat;
+    padding-top: 20px;
 }
 
-.aboutWe div div {
-    display: flex;
-    flex-direction: column;
+
+.content-text {
     background: none;
-    margin: 160px 60px 270px 70px;
+    margin: 80px 60px 250px 70px;
 }
 
-.aboutWe div div h1 {
-    font-size: 40px;
+.content-text h1 {
+    
+    font-size: 60px;
     font-family: LEMON MILK;
     font-weight: 500;
     color: white;
@@ -58,7 +53,7 @@
     padding: 0;  
 }
 
-.aboutWe div div p {
+.content-text p {
     font-family: 'Roboto', sans-serif;
     font-weight: initial;
     font-size: 20px;

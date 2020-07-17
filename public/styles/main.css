@@ -30,6 +30,10 @@ main div img{
         min-width: 414px ;
         height: 250px;
     }
+
+    main div img{
+        display: none;
+    }
 }
 
 
