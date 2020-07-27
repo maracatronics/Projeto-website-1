@@ -1,0 +1,44 @@
+.button {
+    height: 85px;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button.amarelo{
+    background-color: #FFED00;
+}
+
+.button p{
+    font-family: Roboto;
+    font-weight: normal;
+    font-size: 25px;
+    line-height: 35px;
+
+    margin-right: 65px;
+}
+
+.button p span{
+    font-weight: bold;
+}
+
+.button button{
+    width: 242px;
+    height: 51px;
+    outline: 0;
+    border: none;
+    
+    font-family: Roboto;
+    font-weight: 300;
+    font-size: 25px;
+    
+    background-color: #FFDD00;
+}
+
+.button button:hover{
+    transition: 0.4s;
+    font-weight: bold;
+    cursor: pointer;
+    border: 1px solid black;
+}
