@@ -4,6 +4,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
+
+    padding: 0 20px;
 }
 
 .button.amarelo{
@@ -41,4 +43,22 @@
     font-weight: bold;
     cursor: pointer;
     border: 1px solid black;
+}
+
+/*  === botão preto === */
+
+.button.preto{
+    background-color: black;
+    color: white;
+}
+
+
+@media (max-width: 780px) { 
+    .button{
+        flex-wrap: wrap;
+        height: 100%;
+
+        padding-bottom: 20px;
+    }
+
 }
