@@ -55,6 +55,7 @@
 
 @media (max-width: 780px) { 
     .button{
+        text-align: center;
         flex-wrap: wrap;
         height: 100%;
 
