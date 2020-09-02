@@ -13,13 +13,14 @@
     <link rel="stylesheet" href="./public/styles/button.css">
     <link rel="stylesheet" href="./public/styles/history.css">
     <link rel="stylesheet" href="./public/styles/apoio.css">
+    <link rel="stylesheet" href="./public/styles/footer.css">
 
 
 </head>
 <body>
 
     <!-- NAVBAR -->
-    <header >
+    <header id="Header" >
         
         <ul>
             <li>
@@ -55,14 +56,14 @@
     </header>
 
     <!-- HERO -->
-    <main>
+    <main id="Hero">
         <div>
             <img src="./src/image/icons/LOGOHERO.png" alt="Logo"/>
         </div>
     </main>
 
     <!-- QUEM SOMOS -->
-    <section class="aboutWe">
+    <section id="aboutWe" class="aboutWe">
         <div class="background-malha"></div>
         <div class="content-aboutWe">
             <div class="content-text">
@@ -84,7 +85,7 @@
     </section>
 
     <!-- HISTORIA -->
-    <section class="history">
+    <section id="History" class="history">
         <img src="./src/image/imagem-historia.png">
 
         <div class="historia-descr">
@@ -96,7 +97,7 @@
     </section>
 
     <!-- Botão -->
-    <section class="button preto">
+    <section id="button" class="button preto">
         
         <p>Clique aqui para conhecer <span> nossa equipe</span></p>
         <button>EQUIPE</button>
@@ -104,25 +105,9 @@
 
     <!-- LOJA -->
 
-    <section class="store">
-        <div class="title-store">
-            <h1>NOSSA LOJA</h1>
-        </div>
-
-        <div class="background-store">
-            <div class="content-store">
-                <div class="produtos">
-                    <img src="#" alt="">
-
-                    <p></p>
-                </div>
-                scroll
-            </div>
-        </div>
-    </section>
-
+ 
     <!-- APOIO -->
-    <section class="apoio">
+    <section id="apoio" class="apoio">
         <div class="background"><h1>Apoio</h1></div>
         <div class="content">
             <!-- <div class="card">
@@ -210,6 +195,30 @@
                 </div>
             </div> -->
         </div>
+    </section>
+
+    <!-- FOOTER  -->
+    <section id="footer" class="footer">
+        <ul>
+            <li><img class="logo" src="./src/image/icons/LOGOHERO.png" alt="Logo"></li>
+            <li class="icons">
+                <img class="icon-insta" src="./src/image/icons/instagram-cinza.png" alt="instagram">
+                <img class="icon-linkedin" src="./src/image/icons/in.png" alt="linkedin">
+            </li>
+            <li class="links">
+                <a href="#Header">Inicio</a>
+                <a href="#aboutWe">Quem somos</a>
+                <a href="#History">História</a>
+                <a href="#store">Produtos</a>
+                <a href="#Apoio">Apoiadores</a>
+            </li>
+            <li class="endereco">
+                <img class="icon-localizacao" src="./src/image/icons/localização.png" alt="localização">
+                <p>Av. Prof. Moraes Rego, 1235 <br>- Cidade Universitária, Recife - PE, <br>
+                50670-901</p>
+
+            </li>
+        </ul>
     </section>
 </body>
 </html>
