@@ -19,3 +19,13 @@
     width: 100%;
     height: 80vh;
 }
+
+@media (max-width: 480px) { 
+    .apoio .content{
+        background-image: url("../../src/image/LogosApoio/Component\ 2.png");
+        background-size: 100%;
+        margin-bottom: 20px;
+    }
+
+  
+}

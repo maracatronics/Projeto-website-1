@@ -22,7 +22,7 @@
     <!-- NAVBAR -->
     <header id="Header" >
         
-        <ul>
+        <ul class="navbar visible">
             <li>
                 <img src="./src/image/icons/marca-png.png" alt="Logo">
             </li>
@@ -51,15 +51,17 @@
                 <a class="linkMenu" href="#">loja</a>
             </li>
 
+            <li class="botao">fechar</li>
+
         </ul>
 
     </header>
 
     <!-- HERO -->
     <main id="Hero">
-        <div>
+        <!-- <div>
             <img src="./src/image/icons/LOGOHERO.png" alt="Logo"/>
-        </div>
+        </div> -->
     </main>
 
     <!-- QUEM SOMOS -->
@@ -220,5 +222,14 @@
             </li>
         </ul>
     </section>
+
+    <script>
+        const navbar = document.querySelectorAll('.')
+        document.querySelector('.botao').addEventListener("click", function(){
+       
+        navbar.classList.remove('visible')
+    })
+        </script>
 </body>
+    
 </html>
