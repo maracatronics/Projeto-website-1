@@ -15,9 +15,10 @@ header img{
 
 }
 
-header .navbar-itens{
+header .navbarLink{
     display: none;
 }
+
 header ul{
     padding: 0;
     margin: 0;
@@ -31,12 +32,12 @@ header ul{
     align-items: center;
     flex-wrap: nowrap;
     flex-shrink: 2;
+    list-style: none;
 
 }
 
-header ul li{
+header ul .navbarLink.visible{
     display: flex;
-    list-style: none;
 }
 
 header ul li a{
@@ -49,17 +50,63 @@ header ul li a{
     margin: 0 20px;   
 }
 
-.botao{
+.botao.none{
     visibility: hidden;
    }
+
+
+
+
+/* BOTAO MENU */
+
+label[for="bt_menu"]{
+    padding: 5px;
+ background-color: #222;
+ color: #fff;
+ font-family: Arial;
+ text-align: center;
+ font-size: 30px;
+ cursor: pointer;
+ height: 50px;
+}
+
+#bt_menu{
+    display: none;
+}
+
+label[for="bt_menu"]{
+    display: none;
+}
+
 @media (max-width: 800px) { 
     header ul{
         width: 100%;
         flex-direction: column;
+        list-style: none;
+        padding-bottom: 10px;
     }
+   label[for="bt_menu"]{
+       display: block;
+   }
 
-    .botao{
-        visibility: visible;
-    }
+   #bt_menu:checked ~ .navbar{
+       margin-left: 0;
+   }
+
+   .navbar{
+    
+    margin-top: 5px;
+    margin-left: -100%;
+    transition: all .4s;  
+   }
+
+   .navbarLink{
+       width: 100%;
+       float: none;
+   }
+
+   .navbarLink:hover {
+       border-bottom: black solid 1px;
+   }
+   
 }
-

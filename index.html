@@ -21,37 +21,37 @@
 
     <!-- NAVBAR -->
     <header id="Header" >
-        
-        <ul class="navbar visible">
-            <li>
+        <input type="checkbox" id="bt_menu">
+        <label for ="bt_menu">&#9776</label>
+        <ul class="navbar" style="margin-top: 0;">
+            <li class="abrir">
                 <img src="./src/image/icons/marca-png.png" alt="Logo">
             </li>
-            <li >
+            <li class="navbarLink visible" >
                 <a class="linkMenu" href="#Inicio">Inicio</a>
             </li>
-            <li >
+            <li  class="navbarLink visible"  >
                 <a class="linkMenu" href="#QuemSomos">Quem Somos</a>
             </li>
-            <li >
+            <li  class="navbarLink visible"  >
                 <a class="linkMenu" href="#Historia">História</a>
             </li>
-            <li >
+            <li class="navbarLink visible" >
                 <a class="linkMenu" href="#Equipe">Equipe</a>
             </li>
-            <li >
+            <li class="navbarLink visible" >
                 <a class="linkMenu" href="#Robos">Robôs</a>
             </li>
-            <li >
+            <li class="navbarLink visible" >
                 <a class="linkMenu" href="#Competicoes">Competições</a>
             </li>
-            <li >
+            <li class="navbarLink visible" >
                 <a class="linkMenu" href="#Apoio">Apoio</a>
             </li>
-            <li >
+            <li class="navbarLink visible" >
                 <a class="linkMenu" href="#">loja</a>
             </li>
 
-            <li class="botao">fechar</li>
 
         </ul>
 
@@ -224,11 +224,24 @@
     </section>
 
     <script>
-        const navbar = document.querySelectorAll('.')
-        document.querySelector('.botao').addEventListener("click", function(){
+        const navbarLink = document.querySelectorAll('.navbarLink')
+        const botao = document.querySelector('.botao')
+
+        for(let link of navbarLink){
+            document.querySelector(".abrir").addEventListener("click", function(){
+                link.classList.add('visible')
+                botao.classList.remove('none')
+            })
+        }
+        
+        for(let link of navbarLink ){
+            document.querySelector('.botao').addEventListener("click", function(){
        
-        navbar.classList.remove('visible')
-    })
+       link.classList.remove('visible')
+       botao.classList.add('none')
+   })
+        }
+        
         </script>
 </body>
     
