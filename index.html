@@ -215,7 +215,7 @@
                 <a href="#Apoio">Apoiadores</a>
             </li>
             <li class="endereco">
-                <img class="icon-localizacao" src="./src/image/icons/localização.png" alt="localização">
+            <img class="icon-localizacao"  src="./src/image/icons/localização.png" alt="localização">
                 <p>Av. Prof. Moraes Rego, 1235 <br>- Cidade Universitária, Recife - PE, <br>
                 50670-901</p>
 
@@ -223,26 +223,6 @@
         </ul>
     </section>
 
-    <script>
-        const navbarLink = document.querySelectorAll('.navbarLink')
-        const botao = document.querySelector('.botao')
-
-        for(let link of navbarLink){
-            document.querySelector(".abrir").addEventListener("click", function(){
-                link.classList.add('visible')
-                botao.classList.remove('none')
-            })
-        }
-        
-        for(let link of navbarLink ){
-            document.querySelector('.botao').addEventListener("click", function(){
-       
-       link.classList.remove('visible')
-       botao.classList.add('none')
-   })
-        }
-        
-        </script>
 </body>
     
 </html>
